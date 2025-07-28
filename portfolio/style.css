@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0a0f1a; /* deep blue */
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #111827;
+  padding: 3rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid #4c1d95; /* dark purple */
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.highlight {
+  color: #a78bfa; /* soft lavender/purple */
+}
+
+.tagline {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #9ca3af; /* light gray */
+}
+
+section {
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  background-color: #1e293b; /* slate blue-gray */
+  border-radius: 1rem;
+  border: 1px solid #4c1d95;
+}
+
+h2 {
+  color: #c084fc; /* soft violet */
+  border-bottom: 1px solid #4c1d95;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.profile-pic {
+  width: 140px;
+  border-radius: 50%;
+  border: 3px solid #a78bfa;
+  display: block;
+  margin: 1rem auto;
+}
+
+.skills-list li {
+  background-color: #4c1d95;
+  color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+a {
+  color: #a78bfa;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #9ca3af;
+  background-color: #111827;
+  font-size: 0.9rem;
+}
