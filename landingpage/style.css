@@ -1,0 +1,163 @@
+:root {
+  --primary-color: #6A8EAE;
+  --accent-color: #D5E6E4;
+  --text-color: #333;
+  --bg-color: #F9FAF6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 20px 40px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.hero {
+  background-image: linear-gradient(to right, #E8F1F2, #ffffff);
+  padding: 100px 20px;
+  text-align: center;
+  animation: fadeIn 1.2s ease-in;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #4E6E91;
+}
+
+.values {
+  padding: 60px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.value-box {
+  background: var(--accent-color);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.quote {
+  padding: 50px 20px;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.2rem;
+  background: #fff;
+}
+
+.contact {
+  padding: 60px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.contact a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+contact a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* ✨ Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .contact p {
+    font-size: 0.9rem;
+  }
+
+  .quote {
+    font-size: 1rem;
+  }
+}
